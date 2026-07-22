@@ -11,3 +11,17 @@ vim.keymap.set("n", "J", "mzJ'z")
 -- Keeps search terms in the middle
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- error statement for go
+vim.keymap.set(
+    "n",
+    "<leader>ee",
+    "oif err != nil {<CR>}<ESC>Oreturn err<esc>"
+)
+
+-- insert braces
+vim.keymap.set(
+    "n",
+    "<leader>{}",
+    "a{<CR>}<ESC>O"
+)
